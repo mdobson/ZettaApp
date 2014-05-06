@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F588305E1919471D004625A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305D1919471D004625A5 /* Foundation.framework */; };
+		F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305F1919471D004625A5 /* CoreGraphics.framework */; };
+		F58830621919471D004625A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830611919471D004625A5 /* UIKit.framework */; };
+		F58830681919471D004625A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F58830661919471D004625A5 /* InfoPlist.strings */; };
+		F588306A1919471D004625A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F58830691919471D004625A5 /* main.m */; };
+		F588306E1919471D004625A5 /* MSDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F588306D1919471D004625A5 /* MSDAppDelegate.m */; };
+		F58830711919471D004625A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F588306F1919471D004625A5 /* Main.storyboard */; };
+		F58830741919471D004625A5 /* MSDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58830731919471D004625A5 /* MSDMasterViewController.m */; };
+		F58830771919471D004625A5 /* MSDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F58830761919471D004625A5 /* MSDDetailViewController.m */; };
+		F58830791919471D004625A5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58830781919471D004625A5 /* Images.xcassets */; };
+		F58830801919471D004625A5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588307F1919471D004625A5 /* XCTest.framework */; };
+		F58830811919471D004625A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305D1919471D004625A5 /* Foundation.framework */; };
+		F58830821919471D004625A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830611919471D004625A5 /* UIKit.framework */; };
+		F588308A1919471D004625A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F58830881919471D004625A5 /* InfoPlist.strings */; };
+		F588308C1919471D004625A5 /* ZettaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F588308B1919471D004625A5 /* ZettaAppTests.m */; };
+		F58830A119194740004625A5 /* libZettaKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F588309C19194726004625A5 /* libZettaKit.a */; };
+		F58830A619194CA5004625A5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A319194CA4004625A5 /* CFNetwork.framework */; };
+		F58830A719194CA5004625A5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A419194CA5004625A5 /* libicucore.dylib */; };
+		F58830A819194CA5004625A5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A519194CA5004625A5 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F58830831919471D004625A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F58830521919471D004625A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F58830591919471D004625A5;
+			remoteInfo = ZettaApp;
+		};
+		F588309B19194726004625A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F588309519194726004625A5 /* ZettaKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5B382A21918353E0046F312;
+			remoteInfo = ZettaKit;
+		};
+		F588309D19194726004625A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F588309519194726004625A5 /* ZettaKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5B382B21918353F0046F312;
+			remoteInfo = ZettaKitTests;
+		};
+		F588309F19194737004625A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F588309519194726004625A5 /* ZettaKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B382A11918353E0046F312;
+			remoteInfo = ZettaKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F588305A1919471D004625A5 /* ZettaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZettaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F588305D1919471D004625A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F588305F1919471D004625A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F58830611919471D004625A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F58830651919471D004625A5 /* ZettaApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZettaApp-Info.plist"; sourceTree = "<group>"; };
+		F58830671919471D004625A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F58830691919471D004625A5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F588306B1919471D004625A5 /* ZettaApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZettaApp-Prefix.pch"; sourceTree = "<group>"; };
+		F588306C1919471D004625A5 /* MSDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDAppDelegate.h; sourceTree = "<group>"; };
+		F588306D1919471D004625A5 /* MSDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDAppDelegate.m; sourceTree = "<group>"; };
+		F58830701919471D004625A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F58830721919471D004625A5 /* MSDMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDMasterViewController.h; sourceTree = "<group>"; };
+		F58830731919471D004625A5 /* MSDMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDMasterViewController.m; sourceTree = "<group>"; };
+		F58830751919471D004625A5 /* MSDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDDetailViewController.h; sourceTree = "<group>"; };
+		F58830761919471D004625A5 /* MSDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSDDetailViewController.m; sourceTree = "<group>"; };
+		F58830781919471D004625A5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F588307E1919471D004625A5 /* ZettaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZettaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F588307F1919471D004625A5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F58830871919471D004625A5 /* ZettaAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZettaAppTests-Info.plist"; sourceTree = "<group>"; };
+		F58830891919471D004625A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F588308B1919471D004625A5 /* ZettaAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZettaAppTests.m; sourceTree = "<group>"; };
+		F588309519194726004625A5 /* ZettaKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ZettaKit.xcodeproj; path = ../ZettaKit/ZettaKit.xcodeproj; sourceTree = "<group>"; };
+		F58830A319194CA4004625A5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F58830A419194CA5004625A5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		F58830A519194CA5004625A5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F58830571919471D004625A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58830A619194CA5004625A5 /* CFNetwork.framework in Frameworks */,
+				F58830A719194CA5004625A5 /* libicucore.dylib in Frameworks */,
+				F58830A819194CA5004625A5 /* Security.framework in Frameworks */,
+				F588305E1919471D004625A5 /* Foundation.framework in Frameworks */,
+				F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */,
+				F58830621919471D004625A5 /* UIKit.framework in Frameworks */,
+				F58830A119194740004625A5 /* libZettaKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F588307B1919471D004625A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58830801919471D004625A5 /* XCTest.framework in Frameworks */,
+				F58830821919471D004625A5 /* UIKit.framework in Frameworks */,
+				F58830811919471D004625A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F58830511919471D004625A5 = {
+			isa = PBXGroup;
+			children = (
+				F588309519194726004625A5 /* ZettaKit.xcodeproj */,
+				F58830631919471D004625A5 /* ZettaApp */,
+				F58830851919471D004625A5 /* ZettaAppTests */,
+				F588305C1919471D004625A5 /* Frameworks */,
+				F588305B1919471D004625A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F588305B1919471D004625A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F588305A1919471D004625A5 /* ZettaApp.app */,
+				F588307E1919471D004625A5 /* ZettaAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F588305C1919471D004625A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F58830A319194CA4004625A5 /* CFNetwork.framework */,
+				F58830A419194CA5004625A5 /* libicucore.dylib */,
+				F58830A519194CA5004625A5 /* Security.framework */,
+				F588305D1919471D004625A5 /* Foundation.framework */,
+				F588305F1919471D004625A5 /* CoreGraphics.framework */,
+				F58830611919471D004625A5 /* UIKit.framework */,
+				F588307F1919471D004625A5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F58830631919471D004625A5 /* ZettaApp */ = {
+			isa = PBXGroup;
+			children = (
+				F588306C1919471D004625A5 /* MSDAppDelegate.h */,
+				F588306D1919471D004625A5 /* MSDAppDelegate.m */,
+				F588306F1919471D004625A5 /* Main.storyboard */,
+				F58830721919471D004625A5 /* MSDMasterViewController.h */,
+				F58830731919471D004625A5 /* MSDMasterViewController.m */,
+				F58830751919471D004625A5 /* MSDDetailViewController.h */,
+				F58830761919471D004625A5 /* MSDDetailViewController.m */,
+				F58830781919471D004625A5 /* Images.xcassets */,
+				F58830641919471D004625A5 /* Supporting Files */,
+			);
+			path = ZettaApp;
+			sourceTree = "<group>";
+		};
+		F58830641919471D004625A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F58830651919471D004625A5 /* ZettaApp-Info.plist */,
+				F58830661919471D004625A5 /* InfoPlist.strings */,
+				F58830691919471D004625A5 /* main.m */,
+				F588306B1919471D004625A5 /* ZettaApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F58830851919471D004625A5 /* ZettaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F588308B1919471D004625A5 /* ZettaAppTests.m */,
+				F58830861919471D004625A5 /* Supporting Files */,
+			);
+			path = ZettaAppTests;
+			sourceTree = "<group>";
+		};
+		F58830861919471D004625A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F58830871919471D004625A5 /* ZettaAppTests-Info.plist */,
+				F58830881919471D004625A5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F588309619194726004625A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F588309C19194726004625A5 /* libZettaKit.a */,
+				F588309E19194726004625A5 /* ZettaKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F58830591919471D004625A5 /* ZettaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F588308F1919471D004625A5 /* Build configuration list for PBXNativeTarget "ZettaApp" */;
+			buildPhases = (
+				F58830561919471D004625A5 /* Sources */,
+				F58830571919471D004625A5 /* Frameworks */,
+				F58830581919471D004625A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F58830A019194737004625A5 /* PBXTargetDependency */,
+			);
+			name = ZettaApp;
+			productName = ZettaApp;
+			productReference = F588305A1919471D004625A5 /* ZettaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F588307D1919471D004625A5 /* ZettaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F58830921919471D004625A5 /* Build configuration list for PBXNativeTarget "ZettaAppTests" */;
+			buildPhases = (
+				F588307A1919471D004625A5 /* Sources */,
+				F588307B1919471D004625A5 /* Frameworks */,
+				F588307C1919471D004625A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F58830841919471D004625A5 /* PBXTargetDependency */,
+			);
+			name = ZettaAppTests;
+			productName = ZettaAppTests;
+			productReference = F588307E1919471D004625A5 /* ZettaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F58830521919471D004625A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MSD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Matthew Dobson";
+				TargetAttributes = {
+					F588307D1919471D004625A5 = {
+						TestTargetID = F58830591919471D004625A5;
+					};
+				};
+			};
+			buildConfigurationList = F58830551919471D004625A5 /* Build configuration list for PBXProject "ZettaApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F58830511919471D004625A5;
+			productRefGroup = F588305B1919471D004625A5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F588309619194726004625A5 /* Products */;
+					ProjectRef = F588309519194726004625A5 /* ZettaKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F58830591919471D004625A5 /* ZettaApp */,
+				F588307D1919471D004625A5 /* ZettaAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F588309C19194726004625A5 /* libZettaKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libZettaKit.a;
+			remoteRef = F588309B19194726004625A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F588309E19194726004625A5 /* ZettaKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ZettaKitTests.xctest;
+			remoteRef = F588309D19194726004625A5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F58830581919471D004625A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58830791919471D004625A5 /* Images.xcassets in Resources */,
+				F58830681919471D004625A5 /* InfoPlist.strings in Resources */,
+				F58830711919471D004625A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F588307C1919471D004625A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F588308A1919471D004625A5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F58830561919471D004625A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F58830741919471D004625A5 /* MSDMasterViewController.m in Sources */,
+				F588306A1919471D004625A5 /* main.m in Sources */,
+				F58830771919471D004625A5 /* MSDDetailViewController.m in Sources */,
+				F588306E1919471D004625A5 /* MSDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F588307A1919471D004625A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F588308C1919471D004625A5 /* ZettaAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F58830841919471D004625A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F58830591919471D004625A5 /* ZettaApp */;
+			targetProxy = F58830831919471D004625A5 /* PBXContainerItemProxy */;
+		};
+		F58830A019194737004625A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ZettaKit;
+			targetProxy = F588309F19194737004625A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F58830661919471D004625A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58830671919471D004625A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F588306F1919471D004625A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58830701919471D004625A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F58830881919471D004625A5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F58830891919471D004625A5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F588308D1919471D004625A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F588308E1919471D004625A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F58830901919471D004625A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
+				INFOPLIST_FILE = "ZettaApp/ZettaApp-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F58830911919471D004625A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
+				INFOPLIST_FILE = "ZettaApp/ZettaApp-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F58830931919471D004625A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZettaApp.app/ZettaApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZettaAppTests/ZettaAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F58830941919471D004625A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZettaApp.app/ZettaApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
+				INFOPLIST_FILE = "ZettaAppTests/ZettaAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F58830551919471D004625A5 /* Build configuration list for PBXProject "ZettaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F588308D1919471D004625A5 /* Debug */,
+				F588308E1919471D004625A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F588308F1919471D004625A5 /* Build configuration list for PBXNativeTarget "ZettaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F58830901919471D004625A5 /* Debug */,
+				F58830911919471D004625A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F58830921919471D004625A5 /* Build configuration list for PBXNativeTarget "ZettaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F58830931919471D004625A5 /* Debug */,
+				F58830941919471D004625A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F58830521919471D004625A5 /* Project object */;
+}

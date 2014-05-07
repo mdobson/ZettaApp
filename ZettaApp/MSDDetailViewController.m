@@ -88,7 +88,7 @@
         if (self.detailItem.transitions) {
             self.forms = [[NSMutableDictionary alloc] init];
             [self.detailItem.transitions enumerateObjectsUsingBlock:^(ZettaTransition * obj, NSUInteger idx, BOOL *stop) {
-                UIView *formView = [[UIView alloc] initWithFrame:CGRectMake(130, 60 + (idx * 35), 200, 50 * obj.fields.count)];
+                UIView *formView = [[UIView alloc] initWithFrame:CGRectMake(160, 60 + (idx * 35), 200, 50 * obj.fields.count)];
                 
                 [self.forms setObject:[[NSMutableDictionary alloc] init] forKey:obj.name];
                 NSMutableDictionary *form = [self.forms objectForKey:obj.name];
@@ -102,6 +102,8 @@
                         [formView addSubview:transition];
                     } else {
                         UITextField *text = [[UITextField alloc] initWithFrame:CGRectMake(0, 0 + (fidx * 35), 200, 40)];
+                        text.layer.borderWidth = 0.5f;
+                        text.layer.borderColor = [[UIColor blueColor] CGColor];
                         [form setValue:text forKey:field.name];
                         [formView addSubview:text];
                     }

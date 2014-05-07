@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ZettaKit/ZettaMachine.h"
 
-@interface MSDDetailViewController : UIViewController
+@interface MSDDetailViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) ZettaMachine * detailItem;
 
-@property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+@property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @end

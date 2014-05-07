@@ -31,6 +31,8 @@
 		F5EF8624191ABAC40081F952 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF8620191ABAC40081F952 /* CoreTelephony.framework */; };
 		F5EF8625191ABAC40081F952 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF8621191ABAC40081F952 /* QuartzCore.framework */; };
 		F5EF8626191ABAC40081F952 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF8622191ABAC40081F952 /* SystemConfiguration.framework */; };
+		F5EF8629191AD0540081F952 /* MSDZettaActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF8628191AD0540081F952 /* MSDZettaActionCell.m */; };
+		F5EF862C191ADDBE0081F952 /* MSDComplexTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EF862B191ADDBE0081F952 /* MSDComplexTransitionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,10 @@
 		F5EF8620191ABAC40081F952 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		F5EF8621191ABAC40081F952 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F5EF8622191ABAC40081F952 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F5EF8627191AD0540081F952 /* MSDZettaActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDZettaActionCell.h; sourceTree = "<group>"; };
+		F5EF8628191AD0540081F952 /* MSDZettaActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDZettaActionCell.m; sourceTree = "<group>"; };
+		F5EF862A191ADDBE0081F952 /* MSDComplexTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDComplexTransitionViewController.h; sourceTree = "<group>"; };
+		F5EF862B191ADDBE0081F952 /* MSDComplexTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDComplexTransitionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,10 @@
 				F58830761919471D004625A5 /* MSDDetailViewController.m */,
 				F58830781919471D004625A5 /* Images.xcassets */,
 				F58830641919471D004625A5 /* Supporting Files */,
+				F5EF8627191AD0540081F952 /* MSDZettaActionCell.h */,
+				F5EF8628191AD0540081F952 /* MSDZettaActionCell.m */,
+				F5EF862A191ADDBE0081F952 /* MSDComplexTransitionViewController.h */,
+				F5EF862B191ADDBE0081F952 /* MSDComplexTransitionViewController.m */,
 			);
 			path = ZettaApp;
 			sourceTree = "<group>";
@@ -349,6 +359,8 @@
 				F588306A1919471D004625A5 /* main.m in Sources */,
 				F58830771919471D004625A5 /* MSDDetailViewController.m in Sources */,
 				F588306E1919471D004625A5 /* MSDAppDelegate.m in Sources */,
+				F5EF8629191AD0540081F952 /* MSDZettaActionCell.m in Sources */,
+				F5EF862C191ADDBE0081F952 /* MSDComplexTransitionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

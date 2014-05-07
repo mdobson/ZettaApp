@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ApigeeiOSSDK/Apigee.h>
 
 @interface MSDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) ApigeeClient *client;
+@property (strong, nonatomic) ApigeeMonitoringClient *monitoring;
+@property (strong, nonatomic) ApigeeDataClient *data;
 
 @end

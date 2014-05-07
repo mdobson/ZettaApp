@@ -26,6 +26,11 @@
 		F58830A619194CA5004625A5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A319194CA4004625A5 /* CFNetwork.framework */; };
 		F58830A719194CA5004625A5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A419194CA5004625A5 /* libicucore.dylib */; };
 		F58830A819194CA5004625A5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A519194CA5004625A5 /* Security.framework */; };
+		F5EF861D191ABA810081F952 /* ApigeeiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */; };
+		F5EF8623191ABAC40081F952 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861F191ABAC40081F952 /* CoreLocation.framework */; };
+		F5EF8624191ABAC40081F952 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF8620191ABAC40081F952 /* CoreTelephony.framework */; };
+		F5EF8625191ABAC40081F952 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF8621191ABAC40081F952 /* QuartzCore.framework */; };
+		F5EF8626191ABAC40081F952 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF8622191ABAC40081F952 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,11 @@
 		F58830A319194CA4004625A5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F58830A419194CA5004625A5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		F58830A519194CA5004625A5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApigeeiOSSDK.framework; path = "../../Downloads/apigee-ios-sdk (1)/apigee-ios-sdk-2.0.10/lib/ApigeeiOSSDK.framework"; sourceTree = "<group>"; };
+		F5EF861F191ABAC40081F952 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F5EF8620191ABAC40081F952 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F5EF8621191ABAC40081F952 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F5EF8622191ABAC40081F952 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +102,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EF8623191ABAC40081F952 /* CoreLocation.framework in Frameworks */,
+				F5EF8624191ABAC40081F952 /* CoreTelephony.framework in Frameworks */,
+				F5EF8625191ABAC40081F952 /* QuartzCore.framework in Frameworks */,
+				F5EF8626191ABAC40081F952 /* SystemConfiguration.framework in Frameworks */,
+				F58830A819194CA5004625A5 /* Security.framework in Frameworks */,
+				F58830621919471D004625A5 /* UIKit.framework in Frameworks */,
+				F5EF861D191ABA810081F952 /* ApigeeiOSSDK.framework in Frameworks */,
 				F58830A619194CA5004625A5 /* CFNetwork.framework in Frameworks */,
 				F58830A719194CA5004625A5 /* libicucore.dylib in Frameworks */,
-				F58830A819194CA5004625A5 /* Security.framework in Frameworks */,
 				F588305E1919471D004625A5 /* Foundation.framework in Frameworks */,
 				F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */,
-				F58830621919471D004625A5 /* UIKit.framework in Frameworks */,
 				F58830A119194740004625A5 /* libZettaKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +153,11 @@
 		F588305C1919471D004625A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5EF861F191ABAC40081F952 /* CoreLocation.framework */,
+				F5EF8620191ABAC40081F952 /* CoreTelephony.framework */,
+				F5EF8621191ABAC40081F952 /* QuartzCore.framework */,
+				F5EF8622191ABAC40081F952 /* SystemConfiguration.framework */,
+				F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */,
 				F58830A319194CA4004625A5 /* CFNetwork.framework */,
 				F58830A419194CA5004625A5 /* libicucore.dylib */,
 				F58830A519194CA5004625A5 /* Security.framework */,
@@ -399,7 +419,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Dobson (LFT8494QFW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Dobson (LFT8494QFW)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -437,7 +458,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Dobson (LFT8494QFW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Matthew Dobson (LFT8494QFW)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -458,6 +480,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
 				INFOPLIST_FILE = "ZettaApp/ZettaApp-Info.plist";
@@ -472,6 +499,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
 				INFOPLIST_FILE = "ZettaApp/ZettaApp-Info.plist";

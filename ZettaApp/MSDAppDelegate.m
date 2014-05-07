@@ -13,7 +13,32 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSString *app = @"sandbox";
+    NSString *org = @"mdobs";
+    
+    self.client = [[ApigeeClient alloc] initWithOrganizationId:org applicationId:app];
+    self.monitoring = [self.client monitoringClient];
+    self.data = [self.client dataClient];
+    
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    const void *devTokenBytes = [deviceToken bytes];
+    
+    [self.data setDevicePushToken:deviceToken forNotifier:@"zetta" completionHandler:^(ApigeeClientResponse *response) {
+        NSLog(@"Registration:%@",response.rawResponse);
+    }];
+}
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    NSLog(@"Error with Apple registration: %@", error);
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

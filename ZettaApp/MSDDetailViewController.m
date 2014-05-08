@@ -45,6 +45,7 @@
         NSDictionary * jsonData = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
         cell.actionLabel.text = [NSString stringWithFormat:@"%@:%@", labelText, [jsonData objectForKey:@"data"]];
         float val = [jsonData[@"data"] floatValue];
+        
         if (self.low > val) {
             self.low = val;
             [cell.sparkline setLowerLimit:val];
@@ -56,18 +57,6 @@
         }
         
         cell.sparkline.value = val;
-        // Record highs and lows. Asjust graph accordingly.
-        
-        
-//        if (self.firstValue == YES) {
-//            self.prev = val;
-//            self.firstValue = NO;
-//        } else {
-//            float diff = self.prev - val;
-//            cell.sparkline.value = diff;
-//            self.prev = val;
-//        }
-        
         
     }];
 }
@@ -105,55 +94,6 @@
     [super viewDidLoad];
     self.low = 0.0f;
     self.high = 0.0f;
-	// Do any additional setup after loading the view, typically from a nib.
-    /*if (self.detailItem) {
-        self.navigationItem.title = self.detailItem.name;
-        if (self.detailItem.subscriptions) {
-            //place ui button for subscription
-            [self.detailItem.subscriptions enumerateObjectsUsingBlock:^(ZettaEventSubscription * obj, NSUInteger idx, BOOL *stop) {
-                UIButton *subscribe = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-                [subscribe setFrame:CGRectMake(50, 60 + (idx * 100), 200, 40)];
-                subscribe.tag = idx;
-                NSArray *components = [obj.name componentsSeparatedByString:@"-"];
-                [subscribe setTitle:[components objectAtIndex:1] forState:UIControlStateNormal];
-                [subscribe addTarget:self action:@selector(subscribeToWebsocket:) forControlEvents:UIControlEventTouchUpInside];
-                [self.view addSubview:subscribe];
-            }];
-        }
-        
-        if (self.detailItem.transitions) {
-            self.forms = [[NSMutableDictionary alloc] init];
-            [self.detailItem.transitions enumerateObjectsUsingBlock:^(ZettaTransition * obj, NSUInteger idx, BOOL *stop) {
-                UIView *formView = [[UIView alloc] initWithFrame:CGRectMake(160, 60 + (idx * 35), 200, 50 * obj.fields.count)];
-                
-                [self.forms setObject:[[NSMutableDictionary alloc] init] forKey:obj.name];
-                NSMutableDictionary *form = [self.forms objectForKey:obj.name];
-                
-                [obj.fields enumerateObjectsUsingBlock:^(ZettaTransitionField * field, NSUInteger fidx, BOOL *fstop) {
-                    if (field.type == ZettaHidden) {
-                        UIButton *transition = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-                        [transition setFrame:CGRectMake(0, 0 + (fidx * 35), 200, 40)];
-                        [transition setTitle:obj.name forState:UIControlStateNormal];
-                        [transition addTarget:self action:@selector(performTransition:) forControlEvents:UIControlEventTouchUpInside];
-                        [formView addSubview:transition];
-                    } else {
-                        UITextField *text = [[UITextField alloc] initWithFrame:CGRectMake(0, 0 + (fidx * 35), 200, 40)];
-                        text.layer.borderWidth = 0.5f;
-                        text.layer.borderColor = [[UIColor blueColor] CGColor];
-                        [form setValue:text forKey:field.name];
-                        [formView addSubview:text];
-                    }
-                }];
-                [self.view addSubview:formView];
-            }];
-
-        }
-    }*/
-    
-    //[self.collectionView registerClass:[MSDZettaActionCell class] forCellWithReuseIdentifier:@"TransitionCell"];
-    
-    //[self.collectionView reloadData];
-
 }
 
 #pragma mark - UICollectionViewDataSource

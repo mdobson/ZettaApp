@@ -19,6 +19,9 @@
 @property BOOL firstValue;
 @property float prev;
 
+@property float high;
+@property float low;
+
 @end
 
 @implementation MSDDetailViewController
@@ -42,16 +45,28 @@
         NSDictionary * jsonData = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
         cell.actionLabel.text = [NSString stringWithFormat:@"%@:%@", labelText, [jsonData objectForKey:@"data"]];
         float val = [jsonData[@"data"] floatValue];
-        
-        
-        if (self.firstValue == YES) {
-            self.prev = val;
-            self.firstValue = NO;
-        } else {
-            float diff = self.prev - val;
-            cell.sparkline.value = diff;
-            self.prev = val;
+        if (self.low > val) {
+            self.low = val;
+            [cell.sparkline setLowerLimit:val];
         }
+        
+        if (self.high < val) {
+            self.high = val;
+            [cell.sparkline setUpperLimit:val];
+        }
+        
+        cell.sparkline.value = val;
+        // Record highs and lows. Asjust graph accordingly.
+        
+        
+//        if (self.firstValue == YES) {
+//            self.prev = val;
+//            self.firstValue = NO;
+//        } else {
+//            float diff = self.prev - val;
+//            cell.sparkline.value = diff;
+//            self.prev = val;
+//        }
         
         
     }];
@@ -88,7 +103,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.low = 0.0f;
+    self.high = 0.0f;
 	// Do any additional setup after loading the view, typically from a nib.
     /*if (self.detailItem) {
         self.navigationItem.title = self.detailItem.name;

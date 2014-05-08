@@ -39,15 +39,23 @@
         NSLog(@"Message:%@", message);
         NSDictionary * jsonData = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
         cell.actionLabel.text = [NSString stringWithFormat:@"%@:%@", labelText, [jsonData objectForKey:@"data"]];
-        cell.sparkline.value = [jsonData[@"data"] floatValue];
-        if (self.firstValue == YES) {
+        float val = [jsonData[@"data"] floatValue];
+        if (val > 99000.00f) {
+            cell.sparkline.value = val - 99000.00f;
+        } else {
+            cell.sparkline.value = val;
+        }
+        [cell.sparkline clearBaseline];
+        /*if (self.firstValue == YES) {
             float base = [jsonData[@"data"] floatValue];
-            cell.sparkline.baselineValue = base - 100.00f;
-            [cell.sparkline setLowerLimit: base - 200.00f];
-            [cell.sparkline setUpperLimit: base + 100.00f];
+            cell.sparkline.baselineValue = base;
+            [cell.sparkline setUpperLimit:base + 100.00f];
+            [cell.sparkline setLowerLimit:base - 100.00f];
             self.firstValue = NO;
             
-        }
+        }*/
+        
+        
     }];
 }
 

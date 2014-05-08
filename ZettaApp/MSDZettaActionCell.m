@@ -24,6 +24,10 @@
     return self;
 }
 
+-(IBAction)pushed:(id)sender {
+    NSLog(@"Pushed");
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

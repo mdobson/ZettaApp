@@ -14,4 +14,6 @@
 @property (nonatomic, strong) IBOutlet UILabel *actionLabel;
 @property (nonatomic, retain) IBOutlet F3PlotStrip *sparkline;
 
+
+-(IBAction)pushed:(id)sender;
 @end

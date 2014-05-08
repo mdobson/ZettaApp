@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "ZettaKit/ZettaMachine.h"
+#import "F3PlotStrip.h"
 
 @interface MSDDetailViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (strong, nonatomic) ZettaMachine * detailItem;
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
+
 @end

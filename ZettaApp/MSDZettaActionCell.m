@@ -15,6 +15,11 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
+        self.sparkline = [[F3PlotStrip alloc] init];
+        self.sparkline.capacity = 300;
+        self.sparkline.baselineValue = 0.0;
+        self.sparkline.lineColor = [UIColor redColor];
+        self.sparkline.showDot = NO;
     }
     return self;
 }

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "F3PlotStrip.h"
 
 @interface MSDZettaActionCell : UICollectionViewCell
 
 @property (nonatomic, strong) IBOutlet UILabel *actionLabel;
+@property (nonatomic, retain) IBOutlet F3PlotStrip *sparkline;
 
 @end

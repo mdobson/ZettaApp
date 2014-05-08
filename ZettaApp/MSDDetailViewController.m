@@ -16,6 +16,7 @@
 @interface MSDDetailViewController ()
 
 @property (nonatomic, retain) NSMutableDictionary *forms;
+@property BOOL firstValue;
 
 @end
 
@@ -30,13 +31,23 @@
     }
 }
 
--(void)subscribeToWebsocket:(NSInteger)sub andUpdateLabel:(UILabel *)label {
+-(void)subscribeToWebsocket:(NSInteger)sub andUpdateCell:(MSDZettaActionCell *)cell {
     ZettaEventSubscription *subscription = self.detailItem.subscriptions[sub];
-    NSString *labelText = label.text;
+    NSString *labelText = cell.actionLabel.text;
+    self.firstValue = YES;
     [subscription performSubscriptionWithStreamHandler:^(NSString *message) {
         NSLog(@"Message:%@", message);
         NSDictionary * jsonData = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
-        label.text = [NSString stringWithFormat:@"%@:%@", labelText, [jsonData objectForKey:@"data"]];
+        cell.actionLabel.text = [NSString stringWithFormat:@"%@:%@", labelText, [jsonData objectForKey:@"data"]];
+        cell.sparkline.value = [jsonData[@"data"] floatValue];
+        if (self.firstValue == YES) {
+            float base = [jsonData[@"data"] floatValue];
+            cell.sparkline.baselineValue = base - 100.00f;
+            [cell.sparkline setLowerLimit: base - 200.00f];
+            [cell.sparkline setUpperLimit: base + 100.00f];
+            self.firstValue = NO;
+            
+        }
     }];
 }
 
@@ -71,6 +82,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     /*if (self.detailItem) {
         self.navigationItem.title = self.detailItem.name;
@@ -161,7 +173,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         MSDZettaActionCell *cell = (MSDZettaActionCell *)[collectionView cellForItemAtIndexPath:indexPath];
-        [self subscribeToWebsocket:indexPath.row andUpdateLabel:cell.actionLabel];
+        [self subscribeToWebsocket:indexPath.row andUpdateCell:cell];
     } else if (indexPath.section == 1) {
         ZettaTransition *t = self.detailItem.transitions[indexPath.row];
         if (t.fields.count > 1) {

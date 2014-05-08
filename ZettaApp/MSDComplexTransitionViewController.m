@@ -51,6 +51,8 @@
     [super viewDidLoad];
     self.navigationItem.title = self.transition.name;
     self.fields = [[NSMutableArray alloc] init];
+    
+    
     UIView *formView = [[UIView alloc] initWithFrame:CGRectMake(20, 80, self.view.frame.size.width, self.view.frame.size.height)];
     
     [self.transition.fields enumerateObjectsUsingBlock:^(ZettaTransitionField *field, NSUInteger fidx, BOOL *stop) {

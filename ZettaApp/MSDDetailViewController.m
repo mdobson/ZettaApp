@@ -17,6 +17,7 @@
 
 @property (nonatomic, retain) NSMutableDictionary *forms;
 @property BOOL firstValue;
+@property float prev;
 
 @end
 
@@ -34,26 +35,23 @@
 -(void)subscribeToWebsocket:(NSInteger)sub andUpdateCell:(MSDZettaActionCell *)cell {
     ZettaEventSubscription *subscription = self.detailItem.subscriptions[sub];
     NSString *labelText = cell.actionLabel.text;
+    [cell.sparkline clearBaseline];
     self.firstValue = YES;
     [subscription performSubscriptionWithStreamHandler:^(NSString *message) {
         NSLog(@"Message:%@", message);
         NSDictionary * jsonData = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
         cell.actionLabel.text = [NSString stringWithFormat:@"%@:%@", labelText, [jsonData objectForKey:@"data"]];
         float val = [jsonData[@"data"] floatValue];
-        if (val > 99000.00f) {
-            cell.sparkline.value = val - 99000.00f;
-        } else {
-            cell.sparkline.value = val;
-        }
-        [cell.sparkline clearBaseline];
-        /*if (self.firstValue == YES) {
-            float base = [jsonData[@"data"] floatValue];
-            cell.sparkline.baselineValue = base;
-            [cell.sparkline setUpperLimit:base + 100.00f];
-            [cell.sparkline setLowerLimit:base - 100.00f];
+        
+        
+        if (self.firstValue == YES) {
+            self.prev = val;
             self.firstValue = NO;
-            
-        }*/
+        } else {
+            float diff = self.prev - val;
+            cell.sparkline.value = diff;
+            self.prev = val;
+        }
         
         
     }];

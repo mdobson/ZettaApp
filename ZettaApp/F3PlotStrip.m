@@ -681,7 +681,7 @@
   m_flHighWaterValue  = -INFINITY;
   
   // Baseline items
-  m_flBaselineValue   = 0.0f;
+  m_flBaselineValue   = NAN;
   m_flBaselineWidth   = 1.0f;
   m_baselineColor     = [UIColor grayColor];
   

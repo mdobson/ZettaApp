@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F50FE2FF191C1FA600A5C2DA /* ApigeeiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */; };
+		F550C995191D007800E1B574 /* ApigeeiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */; };
 		F5687698191BE085009F9724 /* F3PlotStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = F5687697191BE085009F9724 /* F3PlotStrip.m */; };
 		F588305E1919471D004625A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305D1919471D004625A5 /* Foundation.framework */; };
 		F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305F1919471D004625A5 /* CoreGraphics.framework */; };
@@ -121,7 +121,7 @@
 				F58830A719194CA5004625A5 /* libicucore.dylib in Frameworks */,
 				F588305E1919471D004625A5 /* Foundation.framework in Frameworks */,
 				F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */,
-				F50FE2FF191C1FA600A5C2DA /* ApigeeiOSSDK.framework in Frameworks */,
+				F550C995191D007800E1B574 /* ApigeeiOSSDK.framework in Frameworks */,
 				F58830A119194740004625A5 /* libZettaKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,6 +506,8 @@
 					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
 					"(1)/apigee-ios-sdk-2.0.10/lib",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
@@ -523,6 +525,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
 					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",

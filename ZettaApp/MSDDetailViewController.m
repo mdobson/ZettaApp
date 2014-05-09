@@ -22,6 +22,8 @@
 @property float high;
 @property float low;
 
+@property BOOL streaming;
+
 @end
 
 @implementation MSDDetailViewController
@@ -41,6 +43,7 @@
     [cell.sparkline clearBaseline];
     self.firstValue = YES;
     [subscription performSubscriptionWithStreamHandler:^(NSString *message) {
+        self.streaming = YES;
         NSLog(@"Message:%@", message);
         NSDictionary * jsonData = [NSJSONSerialization JSONObjectWithData:[message dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
         cell.actionLabel.text = [NSString stringWithFormat:@"%@:%@", labelText, [jsonData objectForKey:@"data"]];
@@ -177,4 +180,15 @@
     }
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    if (self.streaming) {
+        for (ZettaEventSubscription *sub in self.detailItem.subscriptions) {
+            if (sub.streaming) {
+                [sub close];
+            }
+        }
+    }
+    
+}
 @end

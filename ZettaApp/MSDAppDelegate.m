@@ -14,7 +14,7 @@
 {
     // Override point for customization after application launch.
     NSString *app = @"sandbox";
-    NSString *org = @"mdobs";
+    NSString *org = @"mdobson";
     
     self.client = [[ApigeeClient alloc] initWithOrganizationId:org applicationId:app];
     self.monitoring = [self.client monitoringClient];
@@ -29,7 +29,7 @@
     
     const void *devTokenBytes = [deviceToken bytes];
     
-    [self.data setDevicePushToken:deviceToken forNotifier:@"zetta" completionHandler:^(ApigeeClientResponse *response) {
+    [self.data setDevicePushToken:deviceToken forNotifier:@"ZettaProd" completionHandler:^(ApigeeClientResponse *response) {
         NSLog(@"Registration:%@",response.rawResponse);
     }];
 }

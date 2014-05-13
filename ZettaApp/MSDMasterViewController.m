@@ -13,7 +13,7 @@
 #import "ZettaKit/ZettaApp.h"
 #import "ZettaKit/ZettaMachine.h"
 
-NSString *const AppEndpoint = @"http://zetta-cloud.herokuapp.com/hello";
+NSString *const AppEndpoint = @"http://zetta-cloud.herokuapp.com/mini-factory-detroit";
 
 @interface MSDMasterViewController () {
 }

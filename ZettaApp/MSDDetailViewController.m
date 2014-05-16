@@ -137,6 +137,7 @@
 #pragma mark - UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (indexPath.section == 0) {
         MSDZettaActionCell *cell = (MSDZettaActionCell *)[collectionView cellForItemAtIndexPath:indexPath];
         [self subscribeToWebsocket:indexPath.row andUpdateCell:cell];

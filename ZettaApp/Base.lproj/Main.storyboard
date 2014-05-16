@@ -74,15 +74,15 @@
             <objects>
                 <viewController title="Detail" id="Ah7-4n-0Wa" customClass="MSDDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cIm-e0-J51"/>
-                        <viewControllerLayoutGuide type="bottom" id="a0L-h9-sNL"/>
+                        <viewControllerLayoutGuide type="top" id="PyX-4z-YPq"/>
+                        <viewControllerLayoutGuide type="bottom" id="z2B-L2-kgM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="MMQ-IT-qOo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Uxr-CP-09U">
-                                <rect key="frame" x="0.0" y="65" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="61" width="320" height="502"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Omg-kW-JU1">
@@ -143,8 +143,8 @@
             <objects>
                 <viewController id="WkF-2c-NQE" customClass="MSDComplexTransitionViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="O2P-0a-A91"/>
-                        <viewControllerLayoutGuide type="bottom" id="vWt-uK-7qj"/>
+                        <viewControllerLayoutGuide type="top" id="7Sz-Fx-mya"/>
+                        <viewControllerLayoutGuide type="bottom" id="lhP-Bk-MSQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Y39-Km-ujP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>

@@ -57,11 +57,26 @@ NSString *const AppEndpoint = @"http://zetta-cloud.herokuapp.com/mini-factory-de
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
+    
+    static NSString *identifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
+    cell.textLabel.textColor = [UIColor colorWithRed:51./255.
+                                               green:153./255.
+                                                blue:204./255.
+                                               alpha:1.0];
+    
     ZettaMachine *machine = self.app.machines[indexPath.row];
     cell.textLabel.text = machine.name;
+    cell.detailTextLabel.text = machine.state;
     return cell;
+}
+
+-(CGFloat) tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return 70.0;
 }
 
 /*

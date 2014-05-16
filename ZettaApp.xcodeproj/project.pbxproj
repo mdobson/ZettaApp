@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F553E4EA191D9DFE0007D4B4 /* libZettaKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F553E4E4191D9D6E0007D4B4 /* libZettaKit.a */; };
+		F554E8E919263169007D610E /* ApigeeiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */; };
 		F5687698191BE085009F9724 /* F3PlotStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = F5687697191BE085009F9724 /* F3PlotStrip.m */; };
-		F576F9AF1922909400FDEFF3 /* ApigeeiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */; };
 		F588305E1919471D004625A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305D1919471D004625A5 /* Foundation.framework */; };
 		F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305F1919471D004625A5 /* CoreGraphics.framework */; };
 		F58830621919471D004625A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830611919471D004625A5 /* UIKit.framework */; };
@@ -122,7 +122,7 @@
 				F58830A719194CA5004625A5 /* libicucore.dylib in Frameworks */,
 				F588305E1919471D004625A5 /* Foundation.framework in Frameworks */,
 				F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */,
-				F576F9AF1922909400FDEFF3 /* ApigeeiOSSDK.framework in Frameworks */,
+				F554E8E919263169007D610E /* ApigeeiOSSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +513,10 @@
 					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
 					"(1)/apigee-ios-sdk-2.0.10/lib",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
@@ -531,6 +535,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Dobson (LFT8494QFW)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
 					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",

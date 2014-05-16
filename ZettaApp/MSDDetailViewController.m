@@ -97,6 +97,7 @@
     [super viewDidLoad];
     self.low = 0.0f;
     self.high = 0.0f;
+    self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -149,11 +150,12 @@
     }
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
 
 #pragma mark - UICollectionViewDelegateFlowLayout
+
+- (CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
+    return CGSizeMake(0, 0);
+}
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Apps</key>
+    <array>
+        <dict>
+            <key>Name</key>
+            <string>Detroit Mini Factory</string>
+            <key>URL</key>
+            <string>http://zetta-cloud.herokuapp.com/mini-factory-detroit</string>
+        </dict>
+        <dict>
+            <key>Name</key>
+            <string>San Franscisco Mini Factory</string>
+            <key>URL</key>
+            <string>http://zetta-cloud.herokuapp.com/mini-factory-san-francisco</string>
+        </dict>
+    </array>
+</dict>
+</plist>

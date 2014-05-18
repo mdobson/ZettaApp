@@ -21,6 +21,14 @@ NSString *const AppEndpoint = @"http://zetta-cloud.herokuapp.com/mini-factory-de
 
 @implementation MSDMasterViewController
 
+- (void)setDetailItem:(id)newDetailItem
+{
+    if (_detailItem != newDetailItem) {
+        _detailItem = newDetailItem;
+    }
+}
+
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -29,7 +37,7 @@ NSString *const AppEndpoint = @"http://zetta-cloud.herokuapp.com/mini-factory-de
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.app = [[ZettaApp alloc] initWithAppString:AppEndpoint];
+    self.app = [[ZettaApp alloc] initWithAppString:_detailItem[@"URL"]];
     self.app.delegate = self;
 }
 

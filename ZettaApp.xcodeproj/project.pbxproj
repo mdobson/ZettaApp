@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F553E4EA191D9DFE0007D4B4 /* libZettaKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F553E4E4191D9D6E0007D4B4 /* libZettaKit.a */; };
-		F554E8E919263169007D610E /* ApigeeiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */; };
 		F5687698191BE085009F9724 /* F3PlotStrip.m in Sources */ = {isa = PBXBuildFile; fileRef = F5687697191BE085009F9724 /* F3PlotStrip.m */; };
 		F588305E1919471D004625A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305D1919471D004625A5 /* Foundation.framework */; };
 		F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588305F1919471D004625A5 /* CoreGraphics.framework */; };
@@ -28,6 +27,9 @@
 		F58830A619194CA5004625A5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A319194CA4004625A5 /* CFNetwork.framework */; };
 		F58830A719194CA5004625A5 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A419194CA5004625A5 /* libicucore.dylib */; };
 		F58830A819194CA5004625A5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58830A519194CA5004625A5 /* Security.framework */; };
+		F5DDB2691928F82C003A44BE /* ZettaApps.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5DDB2681928F82C003A44BE /* ZettaApps.plist */; };
+		F5DDB2701928F9B2003A44BE /* MSDAppTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5DDB26F1928F9B2003A44BE /* MSDAppTableViewController.m */; };
+		F5DDB2711928FE72003A44BE /* ApigeeiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */; };
 		F5EF8623191ABAC40081F952 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF861F191ABAC40081F952 /* CoreLocation.framework */; };
 		F5EF8624191ABAC40081F952 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF8620191ABAC40081F952 /* CoreTelephony.framework */; };
 		F5EF8625191ABAC40081F952 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EF8621191ABAC40081F952 /* QuartzCore.framework */; };
@@ -95,6 +97,9 @@
 		F58830A319194CA4004625A5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F58830A419194CA5004625A5 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		F58830A519194CA5004625A5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F5DDB2681928F82C003A44BE /* ZettaApps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ZettaApps.plist; sourceTree = "<group>"; };
+		F5DDB26E1928F9B2003A44BE /* MSDAppTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDAppTableViewController.h; sourceTree = "<group>"; };
+		F5DDB26F1928F9B2003A44BE /* MSDAppTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDAppTableViewController.m; sourceTree = "<group>"; };
 		F5EF861C191ABA810081F952 /* ApigeeiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApigeeiOSSDK.framework; path = "../../Downloads/apigee-ios-sdk (1)/apigee-ios-sdk-2.0.10/lib/ApigeeiOSSDK.framework"; sourceTree = "<group>"; };
 		F5EF861F191ABAC40081F952 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F5EF8620191ABAC40081F952 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -122,7 +127,7 @@
 				F58830A719194CA5004625A5 /* libicucore.dylib in Frameworks */,
 				F588305E1919471D004625A5 /* Foundation.framework in Frameworks */,
 				F58830601919471D004625A5 /* CoreGraphics.framework in Frameworks */,
-				F554E8E919263169007D610E /* ApigeeiOSSDK.framework in Frameworks */,
+				F5DDB2711928FE72003A44BE /* ApigeeiOSSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +156,7 @@
 		F58830511919471D004625A5 = {
 			isa = PBXGroup;
 			children = (
+				F5DDB2681928F82C003A44BE /* ZettaApps.plist */,
 				F553E4DD191D9D6E0007D4B4 /* ZettaKit.xcodeproj */,
 				F58830631919471D004625A5 /* ZettaApp */,
 				F58830851919471D004625A5 /* ZettaAppTests */,
@@ -205,6 +211,8 @@
 				F5EF8628191AD0540081F952 /* MSDZettaActionCell.m */,
 				F5EF862A191ADDBE0081F952 /* MSDComplexTransitionViewController.h */,
 				F5EF862B191ADDBE0081F952 /* MSDComplexTransitionViewController.m */,
+				F5DDB26E1928F9B2003A44BE /* MSDAppTableViewController.h */,
+				F5DDB26F1928F9B2003A44BE /* MSDAppTableViewController.m */,
 			);
 			path = ZettaApp;
 			sourceTree = "<group>";
@@ -340,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F58830791919471D004625A5 /* Images.xcassets in Resources */,
+				F5DDB2691928F82C003A44BE /* ZettaApps.plist in Resources */,
 				F58830681919471D004625A5 /* InfoPlist.strings in Resources */,
 				F58830711919471D004625A5 /* Main.storyboard in Resources */,
 			);
@@ -362,6 +371,7 @@
 			files = (
 				F58830741919471D004625A5 /* MSDMasterViewController.m in Sources */,
 				F588306A1919471D004625A5 /* main.m in Sources */,
+				F5DDB2701928F9B2003A44BE /* MSDAppTableViewController.m in Sources */,
 				F5687698191BE085009F9724 /* F3PlotStrip.m in Sources */,
 				F58830771919471D004625A5 /* MSDDetailViewController.m in Sources */,
 				F588306E1919471D004625A5 /* MSDAppDelegate.m in Sources */,
@@ -517,6 +527,8 @@
 					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
 					"(1)/apigee-ios-sdk-2.0.10/lib",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZettaApp/ZettaApp-Prefix.pch";
@@ -535,6 +547,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Matthew Dobson (LFT8494QFW)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
+					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",
 					"(1)/apigee-ios-sdk-2.0.10/lib",
 					"/Users/ApigeeCorporation/Downloads/apigee-ios-sdk",

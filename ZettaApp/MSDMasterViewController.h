@@ -12,5 +12,6 @@
 @interface MSDMasterViewController : UITableViewController<ZettaDelegate>
 
 @property (nonatomic, retain) ZettaApp *app;
+@property (nonatomic, retain) NSDictionary *detailItem;
 
 @end
